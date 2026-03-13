@@ -1,6 +1,6 @@
 # 🖨️ ThermalMarky - Markdown Thermal Printer
 
-Did you ever buy a thermal receipt printer "to do cool stuff" and is now collecting dust? No? Me neither.
+Did you ever buy a thermal receipt printer "to do cool stuff" which is now collecting dust? No? Me neither.
 
 But if you have a friend that did, **ThermalMarky** is here to help by supporting basic Markdown features and a basic WebUI to go with it.
 

@@ -7,12 +7,9 @@ WORKDIR /app
 # Install system dependencies for python-escpos (USB and other drivers)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libusb-1.0-0-dev \
-    libjpeg-dev \
-    zlib1g-dev \
     libcups2-dev \
     python3-dev \
     gcc \
-    usbutils \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy the requirements file into the container
