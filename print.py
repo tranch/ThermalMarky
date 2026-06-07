@@ -10,7 +10,9 @@ try:
     if contents is None or len(contents) == 0:
         raise Exception(f"ThermalPrinterMarkdown v{__version__}\n\nUsage:\n\nprint.py file-to-print.md\nOR\ncat file.md | python3 print.py")
 
-    config = ConfigHandler.load()
+    contents_config, contents = ConfigHandler.extract_config_from_contents(contents)
+
+    config = ConfigHandler.load(contents_config)
 
     data = MarkdownConverter(config.line_width).convert(contents)
 

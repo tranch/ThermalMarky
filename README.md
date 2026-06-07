@@ -51,6 +51,23 @@ MARKY_MAX_LINES=30
 
 # Max line width supported by the printer for text-wrapping.
 MARKY_LINE_WIDTH=48
+
+# ESC/POS text font. Try `a` or `b`. `b` is commonly the smaller text font.
+MARKY_FONT=a
+```
+
+#### Configuration in Text
+
+You can also override configuration via the contents of the data to be printed, by enclosing it in `<!-- -->`.
+
+```
+<!--
+MARKY_FONT=b
+MARKY_LINE_WIDTH=64
+-->
+# Hello World!
+
+This will be printed in font 'b' and max line width will be 64!
 ```
 
 ## Running with Docker (Recommended)

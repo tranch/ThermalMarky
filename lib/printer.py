@@ -1,4 +1,3 @@
-# from lib.char import Char
 import logging
 from lib.config import Config
 from escpos.printer import Network, Usb
